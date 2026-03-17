@@ -1,0 +1,19 @@
+{
+  "name": "flash-card-generator",
+  "version": "1.0.0",
+  "description": "automatically make flashcards or something",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^41.0.2"
+  },
+  "dependencies": {
+    "inquirer": "^13.3.2",
+    "jest": "^30.3.0",
+    "sql.js": "^1.14.1"
+  }
+}
