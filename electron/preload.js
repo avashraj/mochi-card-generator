@@ -1,5 +1,6 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('electronAPI', {
-  openFile: () => ipcRenderer.invoke('dialog:openFile')
+  generateCards: (text) => ipcRenderer.invoke('gemini:generate', text),
+  saveCards: (cards) => ipcRenderer.invoke('cards:save', cards),
 })
