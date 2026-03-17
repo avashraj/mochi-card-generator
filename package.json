@@ -2,18 +2,29 @@
   "name": "flash-card-generator",
   "version": "1.0.0",
   "description": "automatically make flashcards or something",
-  "main": "index.js",
+  "main": "electron/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"vite\" \"electron .\"",
+    "build": "vite build",
+    "electron": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^41.0.2"
+    "@vitejs/plugin-react": "^4.x",
+    "autoprefixer": "^10.x",
+    "concurrently": "^9.x",
+    "electron": "^41.0.2",
+    "postcss": "^8.x",
+    "tailwindcss": "^3.4",
+    "vite": "^6.x"
   },
   "dependencies": {
     "inquirer": "^13.3.2",
     "jest": "^30.3.0",
+    "react": "^19.x",
+    "react-dom": "^19.x",
     "sql.js": "^1.14.1"
   }
 }
